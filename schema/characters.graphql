@@ -1,0 +1,14 @@
+type Character {
+  id: ID
+  name: String
+  image: String
+}
+
+type Characters {
+  results: [Character]
+}
+
+type Query {
+  characters: Characters
+    @graphql(endpoint: "https://rickandmortyapi.com/graphql")
+}

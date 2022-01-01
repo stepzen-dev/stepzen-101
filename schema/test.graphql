@@ -1,0 +1,13 @@
+interface Test {
+  String: String!
+  Int: Int!
+  Float: Float!
+  JSON: JSON!
+  JSON2: JSON!
+  Date: Date!
+  DateTime: DateTime!
+}
+
+type Query {
+  getTest: Test
+}

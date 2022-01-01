@@ -1,0 +1,15 @@
+type Breed {
+  id: String!
+  name: String!
+  temperament: String!
+  life_span: String!
+  origin: String!
+}
+
+type Query {
+  breedById(id: String!): [Breed]
+    @rest(
+      endpoint: "https://api.thecatapi.com/v1/breeds/search?q=$id"
+      configuration: "cat_config"
+    )
+}

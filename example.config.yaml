@@ -1,0 +1,7 @@
+configurationset:
+  - configuration:
+      name: mysql_config
+      dsn: YOUR_DATABASE_DSN
+  - configuration:
+      name: cat_config
+      Authorization: Apikey YOUR_API_KEY

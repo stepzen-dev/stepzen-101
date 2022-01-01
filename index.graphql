@@ -1,0 +1,11 @@
+schema
+  @sdl(
+    files: [
+      "mysql/mysql.graphql"
+      "schema/breed.graphql"
+      "schema/characters.graphql"
+      "schema/test.graphql"
+    ]
+  ) {
+  query: Query
+}
